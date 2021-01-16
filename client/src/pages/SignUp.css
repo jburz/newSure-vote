@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(199, 212, 224);
+}
+
+h6 {
+    font-weight: normal;
+    color:rgb(24, 24, 24)
+}
+
+#signup-jumbotron {
+    margin-top: 30px;
+    opacity: .9; 
+}
+
+#verification {
+    padding-top: 20px;
+}
+
+#verification-header {
+    padding-bottom: 10px;
+    font-weight: normal;
+    color:rgb(24, 24, 24)
+}
+
+.mr-3 {
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px #808080;
+}
+
+h6 {
+    font-weight: bold;
+    color: rgb(15, 15, 15); 
+}
+
+p {
+    font-weight: bold;
+}
+
+#email-text {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+}
+
+#main-jumbotron {
+    margin-left: 30px;
+    margin-right: 30px;
+}

@@ -1,0 +1,20 @@
+#main-container {
+    align-items: center;
+    justify-content: center;
+}
+
+#main-jumboron {
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    border: solid 3px black;
+    width: 100%;
+}
+
+#video {
+    border: solid 3px black;
+    width: 100%;
+}
+

@@ -1,0 +1,28 @@
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#card-title {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#street {
+    font-weight: bold;
+}
+
+#city {
+    font-weight: bold;
+}
+
+#state {
+    font-weight: bold;
+}
+
+#zipcode {
+    font-weight: bold;
+}

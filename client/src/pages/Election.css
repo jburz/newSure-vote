@@ -1,0 +1,31 @@
+#card-title {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #808080;
+    align-items: center;
+    justify-content: center;
+}
+
+#state-election {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #808080;
+}
+
+#federal-election {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #808080;
+}
+
+#main-card {
+    align-items: center;
+    justify-content: center;
+}
+
+.mr-3 {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
