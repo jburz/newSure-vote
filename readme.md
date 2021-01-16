@@ -1,6 +1,6 @@
 # SURE VOTE
 
-![License Badge](https://img.shields.io/badge/License-MIT_license-brightgreen)
+Link to deployed site: [SURE VOTE](https://young-journey-30565.herokuapp.com/)
 
 ## Table of Contents
 * [Description](#description)
@@ -27,14 +27,16 @@ Jake Burzlaff, AJ Clemens, Layne Hansen, Collin Porter
 No.
 
 ## License
-MIT_license
+![License Badge](https://img.shields.io/badge/License-MIT_license-brightgreen)
 <br><br>
 <br>
 
 ## Questions
-
 For questions and comments, contact us at:
+surev0te@zohomail.com
 
-Github: [jburz, Cloggedbat, LayneHansen, portercol](https://github.com/LayneHansen)
-
-Email: surev0te@zohomail.com
+## Come see us at Github
+[Jake Burzlaff](https://github.com/jburz) |
+[Alvin Clemens](https://github.com/Cloggedbat) |
+[Layne Hansen](https://github.com/LayneHansen) |
+[Collin Porter](https://github.com/portercol)
