@@ -35,12 +35,12 @@ app.use(cors())
 app.use(apiRoutes);
 app.use(mailerRoute);
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(__dirname + "/client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(__dirname + "/client/build/index.html");
-  });
-}
+// if (process.env.NODE_ENV === "production") {
+app.use(express.static(__dirname + "/client/build"));
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/client/build/index.html");
+});
+// }
 
 app.listen(PORT, () => {
   console.log('app running on PORT: ' + PORT);
