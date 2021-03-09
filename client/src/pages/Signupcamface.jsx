@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 import { Button, ButtonGroup, Col, Container, Form, Jumbotron, Row } from "react-bootstrap";
 import { submitToAgatha } from "../utils/submitApiImgP"
 import { newUserApi } from '../utils/newUserfaceApi';
-import { trainingStart } from '../utils/Training'
+import { startTraining, checkTraining } from '../utils/Training'
 // import ApiCalls from "../utils/ApiCalls";
 // import GroupPersons from './faceapi/Groups';
 // import Actions from './faceapi/Actions';
@@ -118,8 +118,8 @@ const SignUp2 = () => {
                                     <button className="btn btn-dark" onClick={stopVideo}>
                                         Stop Camera</button>
                                 ) : (
-                                    <button className="btn btn-dark" onClick={startVideo}>
-                                        Start Camera</button>
+                                        <button className="btn btn-dark" onClick={startVideo}>
+                                            Start Camera</button>
                                     )}
                             </ButtonGroup>
 
@@ -154,6 +154,8 @@ const SignUp2 = () => {
                                                             .then(res => {
                                                                 console.log(res);
                                                                 console.log("Person id added to db", currentPersonId);
+                                                                startTraining();
+                                                                console.log("training has been started!!!!");
                                                                 // console.log(currentPersondId.length);
                                                                 setDisableValue(false);
                                                                 // alert("Your face has been mapped, you may complete your sign up now.");
@@ -172,7 +174,7 @@ const SignUp2 = () => {
 
                             </ButtonGroup>
                             <br />
-                            <h1>Used Photo</h1>     
+                            <h1>Used Photo</h1>
                             <canvas ref={vest} id="canvas" height={HEIGHT}></canvas>
                         </div>
                     </div>

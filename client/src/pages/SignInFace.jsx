@@ -132,7 +132,7 @@ const SignIn2 = () => {
                                                 }
 
                                             } catch (err) {
-                                                console.error("this is an error", err)
+                                                alert(err);
                                             }
 
                                         }

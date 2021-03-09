@@ -179,12 +179,12 @@ class TrainGroup extends Component {
 
     startTraining = e => {
         this.setState({ showLoadingOverlay: true }, () => {
-            trainingStart(this.props, () => {
-            })
-
+            var api = new ApiCalls();
+            api.Post(api.personGroupTrainEndPoint(this.props.personGroupId))
+                .then(rest => {
+                    this.timer = setInterval(() => this.checkTraining(), 5000);
+                });
         });
-
-
     }
 
     checkTraining() {
