@@ -75,6 +75,13 @@ const SignUp = () => {
     }
   }
 
+  const handleKeypress = e => {
+    console.log(e);
+    if (e.charCode === 13) {
+      signUpBtn();
+    }
+  }
+
   const redirectHandler = () => {
     setRedirect(true);
     console.log("redirect handler: ", redirect);
@@ -97,12 +104,14 @@ const SignUp = () => {
                 <Form.Control
                   placeholder="*First name"
                   onChange={(e) => setFirstNameValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Col>
               <Col>
                 <Form.Control
                   placeholder="*Last name"
                   onChange={(e) => setLastNameValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Col>
             </Form.Row>
@@ -113,6 +122,7 @@ const SignUp = () => {
                   type="email"
                   placeholder="*Enter email"
                   onChange={(e) => setUsernameValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Form.Group>
 
@@ -122,6 +132,7 @@ const SignUp = () => {
                   type="password"
                   placeholder="*Password"
                   onChange={(e) => setPasswordValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Form.Group>
             </Form.Row>
@@ -131,6 +142,7 @@ const SignUp = () => {
               <Form.Control
                 placeholder="*Street Address"
                 onChange={(e) => setStreetAddress1Value(e.target.value)}
+                onKeyPress={handleKeypress}
               />
             </Form.Group>
 
@@ -139,6 +151,7 @@ const SignUp = () => {
               <Form.Control
                 placeholder="Apartment, studio, or floor"
                 onChange={(e) => setStreetAddress2Value(e.target.value)}
+                onKeyPress={handleKeypress}
               />
             </Form.Group>
 
@@ -148,6 +161,7 @@ const SignUp = () => {
                 <Form.Control
                   placeholder="*City"
                   onChange={(e) => setCityValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Form.Group>
 
@@ -156,6 +170,7 @@ const SignUp = () => {
                 <Form.Control
                   // id="state"
                   onChange={(e) => setStateValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                   as="select" defaultValue="State...">
                   <option>*State</option>
                   <option id="AL">Alabama</option>
@@ -217,6 +232,7 @@ const SignUp = () => {
                 <Form.Control
                   placeholder="*Zip Code"
                   onChange={(e) => setZipCodeValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Form.Group>
             </Form.Row>
