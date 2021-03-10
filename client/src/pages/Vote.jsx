@@ -84,6 +84,12 @@ const Vote = () => {
     return (<Redirect to="/signin" />);
   }
 
+  const handleKeypress = e => {
+    if (e.charCode === 13) {
+      voteBtn();
+    }
+  }
+
   const redirectHandler = () => {
 
     setRedirect(true);
@@ -107,12 +113,14 @@ const Vote = () => {
                 <Form.Control
                   placeholder="*First name"
                   onChange={(e) => setFirstNameValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Col>
               <Col>
                 <Form.Control
                   placeholder="*Last name"
                   onChange={(e) => setLastNameValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Col>
             </Form.Row>
@@ -122,6 +130,7 @@ const Vote = () => {
               <Form.Control
                 placeholder="*Street Address"
                 onChange={(e) => setStreetAddress1Value(e.target.value)}
+                onKeyPress={handleKeypress}
               />
             </Form.Group>
 
@@ -130,6 +139,7 @@ const Vote = () => {
               <Form.Control
                 placeholder="Apartment, studio, or floor"
                 onChange={(e) => setStreetAddress2Value(e.target.value)}
+                onKeyPress={handleKeypress}
               />
             </Form.Group>
 
@@ -139,6 +149,7 @@ const Vote = () => {
                 <Form.Control
                   placeholder="*City"
                   onChange={(e) => setCityValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Form.Group>
 
@@ -146,6 +157,7 @@ const Vote = () => {
                 <Form.Label></Form.Label>
                 <Form.Control
                   onChange={(e) => setStateValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                   as="select" defaultValue="State...">
                   <option>*State</option>
                   <option id="AL">Alabama</option>
@@ -207,6 +219,7 @@ const Vote = () => {
                 <Form.Control
                   placeholder="*Zip Code"
                   onChange={(e) => setZipCodeValue(e.target.value)}
+                  onKeyPress={handleKeypress}
                 />
               </Form.Group>
             </Form.Row>
@@ -224,6 +237,7 @@ const Vote = () => {
                 id="id-field"
                 aria-describedby="basic-addon1"
                 onChange={e => setUuidValue(e.target.value)}
+                onKeyPress={handleKeypress}
               />
             </InputGroup>
             <br />
