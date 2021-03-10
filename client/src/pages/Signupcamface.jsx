@@ -154,7 +154,7 @@ const SignUp2 = () => {
                                                             .then(res => {
                                                                 console.log(res);
                                                                 console.log("Person id added to db", currentPersonId);
-                                                                startTraining();
+                                                                startTraining(currentPersonId);
                                                                 console.log("training has been started!!!!");
                                                                 // console.log(currentPersondId.length);
                                                                 setDisableValue(false);

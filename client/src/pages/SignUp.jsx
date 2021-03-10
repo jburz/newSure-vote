@@ -76,7 +76,6 @@ const SignUp = () => {
   }
 
   const handleKeypress = e => {
-    console.log(e);
     if (e.charCode === 13) {
       signUpBtn();
     }

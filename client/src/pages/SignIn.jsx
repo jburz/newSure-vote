@@ -51,6 +51,12 @@ const SignIn = () => {
         }
     }
 
+    const handleKeypress = e => {
+        if (e.charCode === 13) {
+            submitBtn();
+        }
+    }
+
     const redirectHandler = () => {
         setRedirect(true);
         console.log("redirect handler: ", redirect);
@@ -81,6 +87,7 @@ const SignIn = () => {
                                 type="email"
                                 placeholder="Email"
                                 onChange={e => setUsernameLogin(e.target.value)}
+                                onKeyPress={handleKeypress}
                             />
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone.
@@ -92,6 +99,7 @@ const SignIn = () => {
                                 type="password"
                                 placeholder="Password"
                                 onChange={e => setPasswordLogin(e.target.value)}
+                                onKeyPress={handleKeypress}
                             />
                             <Form.Text className="text-muted">
                                 We'll never share your password with anyone.
